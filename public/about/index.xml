@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Abouts on Alicia Mand</title>
+    <link>http://localhost:1313/about/</link>
+    <description>Recent content in Abouts on Alicia Mand</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 20 Aug 2024 13:11:51 -0500</lastBuildDate><atom:link href="http://localhost:1313/about/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/about/about/</link>
+      <pubDate>Tue, 20 Aug 2024 13:11:51 -0500</pubDate>
+      
+      <guid>http://localhost:1313/about/about/</guid>
+      <description>About Me Hi! My name is Alicia Mand and I am a Ph.D. student at the University of Wisconsin&amp;ndash;Madison. I am interested in particle physics with a (current) emphasis on particle astrophysics.</description>
+      <content>&lt;h2 id=&#34;about-me&#34;&gt;About Me&lt;/h2&gt;
+&lt;p&gt;Hi! My name is &lt;strong&gt;Alicia Mand&lt;/strong&gt; and I am a Ph.D. student at the &lt;strong&gt;University of Wisconsin&amp;ndash;Madison.&lt;/strong&gt; I am interested in particle physics with a (current) emphasis on particle astrophysics.&lt;/p&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>
