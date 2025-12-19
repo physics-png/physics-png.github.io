@@ -1,0 +1,18 @@
+:root {
+    --accent: #23B0FF; /* 1 of 5 basic colors */
+    --background: rgb(251, 226, 226); /* background color; inherit shades of the accent */
+    --accent-contrast-color: black; /* mainly uses for text on the accent backgrounds but not limited */
+    --color: black; /* text color, also some other text use the variable in color mixing */
+    --border-color: rgba(255, 255, 255, .1); /* border color */
+
+    /* code syntax */
+    /* take a look at themes/re-terminal/assets/css/syntax.scss to understand in detail which color stands for */
+    --syntax-func-color: color-mix(in srgb, var(--accent) 70%, #999 30%); 
+    --syntax-var-color: color-mix(in srgb, var(--accent) 90%, transparent);
+    --syntax-value-color: color-mix(in srgb, var(--accent), white);
+    --max_width:2000px;
+    /* breakpoints */
+    /* unfortunately, native CSS variables don't support media queries, so use SCSS vars instead */
+    $phone: 684px;
+    $tablet: 900px;
+  }
