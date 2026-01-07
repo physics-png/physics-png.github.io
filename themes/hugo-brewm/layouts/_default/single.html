@@ -64,7 +64,7 @@
             {{ partial "page/title.html" . }}
             {{- if $isPost }}
             <div id="doc-author" class="textsw">
-                {{- $author := cond .Params.author .Params.author site.Params.Author.name }}
+                {{- $author := or .Params.author site.Params.Author.name }}
                 {{- $authors := or (.GetTerms "authors") (.GetTerms "author") }}
                 {{- $notMultiAuthor := eq (len $authors) 1 }}
                 {{- if $authors }}
