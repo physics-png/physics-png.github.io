@@ -21,15 +21,20 @@
             </noscript>
         </div>
         <nav aria-label="{{ i18n "ctaComments" }}">
-            {{- $cta := cond $toot $toot $bsky }}
+            {{- $cta := or $toot $bsky }}
             <a id="join-discussion" href="{{ $cta }}" rel="nofollow" aria-label="{{ i18n "ctaComments" }}">
-                <i class="icon {{ if $toot }}mastodon{{ else }}bluesky{{ end }}" style="padding-right: 3pt;"></i><span>{{ i18n "ctaComments" }}</span>
+                <i class="icon {{ with $toot }}mastodon{{ else }}bluesky{{ end }}" style="padding-right: 3pt;"></i>
+                <span>{{ i18n "ctaComments" }}</span>
             </a>
-            {{- if and $toot $bsky }}
-                <a id="join-discussion-bluesky" href="{{ $bsky }}" rel="nofollow" aria-label="{{ i18n "fediverseBluesky" }}">
-                    <i class="icon bluesky"></i>
-                    <span class="t">{{ i18n "fediverseBluesky" }}</span>
-                </a>
+        
+            {{- with $toot }}
+                {{- with $bsky }}
+                    <a id="join-discussion-bluesky" href="{{ $bsky }}" rel="nofollow"
+                       aria-label="{{ i18n "fediverseBluesky" }}">
+                        <i class="icon bluesky"></i>
+                        <span class="t">{{ i18n "fediverseBluesky" }}</span>
+                    </a>
+                {{- end }}
             {{- end }}
         </nav>
     </article>
